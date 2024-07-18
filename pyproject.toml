@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "ml-spec-torch"
+version = "0.1.0"
+description = ""
+authors = ["Alnine"]
+readme = "README.md"
+packages = [{include = "ml_spec_torch"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+numpy = "^1.26.1"
+matplotlib = "^3.8.1"
+torch = "2.0.0"
+scikit-learn = "^1.3.2"
+pandas = "^2.1.3"
+tensorflow = "^2.15.0"
+pyvirtualdisplay = "^3.0"
+gymnasium = {extras = ["box2d"], version = "^0.29.1"}
+imageio = {extras = ["ffmpeg"], version = "^2.33.0"}
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.26.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
